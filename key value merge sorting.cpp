@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<conio.h>
 int a[100],f[100];
+/*This function merges the two sub arrays and performs sorting simultaneously.*/
 void merg(int l,int m,int h)
 {
 	int i,j,k;
@@ -61,6 +62,7 @@ void merg(int l,int m,int h)
 		k++;
 	}
 }
+/*This function divides the each array into two sub arrays recursively until each array contains single element and merges it by calling merg function.*/
 void mersort(int l,int h)
 {
 	if(l<h)
@@ -71,6 +73,7 @@ void mersort(int l,int h)
 		merg(l,m,h);
 	}
 }
+/*This function is used for input and output of key value pairs.*/
 int main()
 {
 	int n;
