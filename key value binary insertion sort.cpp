@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 int a[100],b[100];
+/*This function finds the position of selected element in the sorted list left to selected element.*/
 int binsearch(int l,int h,int si,int si1)
 {
 	int m;
@@ -30,6 +31,7 @@ int binsearch(int l,int h,int si,int si1)
 	}
 	
 }
+/*This is the main function which performs insertion sort.Finds the position of selected element inserts it in the left sorted list.*/
 void inssort(int n)
 {
 	int i,select,l,j,select1;
@@ -50,6 +52,7 @@ void inssort(int n)
 		
 	}
 }
+/*This function is for input and output of key value pairs.*/
 int main()
 {
 	int n,i;
