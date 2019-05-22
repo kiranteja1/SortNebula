@@ -1,5 +1,6 @@
 # SortNebula
 Iam using these three types of sorts.
+
 MERGE SORT:
 
 Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. The merg() function is used for merging two halves. The merge(l, m, h) is key process that assumes that a[l..m] and a[m+1..h] are sorted and merges the two sorted sub-arrays into one.
