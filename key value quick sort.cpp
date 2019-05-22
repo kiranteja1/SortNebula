@@ -3,6 +3,7 @@
 #include<stdlib.h>
 int n;
 int a[100],b[100];
+/*This function swaps the values given.*/
 void swap(int *s,int *d,int *x,int *z)
 {
 	int y,b;
@@ -13,6 +14,7 @@ void swap(int *s,int *d,int *x,int *z)
 	*x=*z;
 	*z=b;
 }
+/*This function finds the position of pivot in the list.This position is called partitioning position.*/
 int part(int l,int h)
 {
 	int i,j,pvt,bpvt;
@@ -39,6 +41,7 @@ int part(int l,int h)
 	swap(&a[l],&a[j],&b[l],&b[j]);
 	return j;
 }
+/*This function performs quick sort finds the partitioning position and calls itself recursively for a[l...p] and a[p+1.....h] arrays.*/
 void quicksort(int l,int h)
 {
 	int p;
@@ -49,6 +52,7 @@ void quicksort(int l,int h)
 		quicksort(p+1,h);
 	}
 }
+/*This function is for input and output of key value pairs.*/
 int main()
 {
 	int i,l=0,h;
